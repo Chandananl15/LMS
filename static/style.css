@@ -1,0 +1,150 @@
+:root {
+    --primary: #4a90e2;
+    --primary-light: #74b9ff;
+    --background: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-dark: #2d3436;
+    --text-light: #636e72;
+    --accent: #ffeaa7;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: var(--background);
+    color: var(--text-dark);
+}
+
+nav {
+    background: var(--primary);
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: var(--accent);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary-light);
+}
+
+.flash-messages {
+    background: var(--accent);
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.card {
+    padding: 20px;
+    background: var(--card-bg);
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.checkbox-container:hover {
+    background: #f1f2f6;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.timetable {
+    color: var(--text-light);
+    font-size: 0.9em;
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: var(--primary);
+    color: white;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+}

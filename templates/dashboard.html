@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hello, {{ current_user.name }} 👋</h1>
+<p>Welcome to your dashboard.</p>
+<div class="card">
+    <h3>📚 Subjects</h3>
+    <p>Select and enroll in courses you like.</p>
+    <a class="btn" href="{{ url_for('subjects') }}">View Subjects</a>
+</div>
+<div class="card">
+    <h3>🗓 Timetable</h3>
+    <p>Check your scheduled classes.</p>
+    <a class="btn" href="{{ url_for('timetable') }}">View Timetable</a>
+</div>
+{% endblock %}

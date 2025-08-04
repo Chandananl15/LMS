@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Select Subjects</h2>
+<form method="POST">
+    {% for subject in subjects %}
+        <label class="checkbox-container">
+            <input type="checkbox" name="subjects" value="{{ subject.id }}">
+            {{ subject.name }} - {{ subject.faculty }}
+            <span class="timetable">{{ subject.timetable }}</span>
+        </label>
+    {% endfor %}
+    <button type="submit" class="btn">Enroll</button>
+</form>
+{% endblock %}

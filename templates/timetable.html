@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Timetable</h2>
+{% if subjects %}
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Faculty</th>
+            <th>Time</th>
+        </tr>
+        {% for sub in subjects %}
+        <tr>
+            <td>{{ sub.name }}</td>
+            <td>{{ sub.faculty }}</td>
+            <td>{{ sub.timetable }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>You have not enrolled in any subjects yet.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="text-align:center; margin-top:40px;">
+    <!-- Hero Section -->
+    <h1>📚 Welcome to LMS Portal</h1>
+    <p style="color:#555; font-size:18px; max-width:650px; margin:auto;">
+        Your all-in-one platform for course management, subject enrollment, and class scheduling. 
+        Manage your learning journey with ease and stay on top of your academic life.
+    </p>
+    <img src="https://img.icons8.com/clouds/500/online.png" alt="LMS Illustration" style="max-width:350px; margin:20px 0;">
+    <br>
+    <a class="btn" href="{{ url_for('register') }}" style="padding:12px 25px; font-size:16px;">🚀 Get Started</a>
+</div>
+
+<hr style="margin:40px 0;">
+
+<!-- Features Section -->
+<div style="text-align:center; margin-top:40px;">
+    <h2>✨ Why Choose LMS Portal?</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px;">
+        <div class="card">
+            <h3>📖 Easy Subject Selection</h3>
+            <p>Select and enroll in your favorite subjects with a single click. Stay in control of your learning.</p>
+        </div>
+        <div class="card">
+            <h3>🗓 Organized Timetable</h3>
+            <p>Automatically view your class schedules and never miss an important lecture again.</p>
+        </div>
+        <div class="card">
+            <h3>👩‍🏫 Expert Faculty</h3>
+            <p>Learn from experienced professors and industry experts guiding your academic success.</p>
+        </div>
+    </div>
+</div>
+
+<hr style="margin:40px 0;">
+
+<!-- How It Works Section -->
+<div style="text-align:center; margin-top:40px;">
+    <h2>⚡ How It Works</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px;">
+        <div class="card">
+            <h3>1️⃣ Sign Up</h3>
+            <p>Create your free LMS account in seconds with just your name, email, and password.</p>
+        </div>
+        <div class="card">
+            <h3>2️⃣ Choose Subjects</h3>
+            <p>Browse through available courses and enroll in the ones you love the most.</p>
+        </div>
+        <div class="card">
+            <h3>3️⃣ View Timetable</h3>
+            <p>Instantly access your class schedule and plan your week efficiently.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
